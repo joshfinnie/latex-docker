@@ -1,10 +1,10 @@
-FROM debian:buster-slim
+FROM debian:bullseye-slim
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-        biber=2.12-2 \
-        latexmk=1:4.61-0.1 \
-        texlive-full=2018.20190227-2 && \
+        biber=2.16-1 \
+        latexmk=1:4.70b-0.2 \
+        texlive-full=2020.20210202-3 && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
