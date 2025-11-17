@@ -1,13 +1,9 @@
 # LaTeX Docker
 
-This Docker image provides a lightweight environment for compiling LaTeX
-documents using latexmk, which handles multiple compilation passes,
-bibliographies, and error recovery automatically.
-
 ## ✅ Features
 
-- Based on `debian:bullseye-slim`
-- Uses `latexmk` for simplified and reliable LaTeX builds
+- Based on `alpine:3.20`
+- Uses `tectonics` for simplified and reliable LaTeX builds
 - Supports PDF generation out of the box
 - Minimal and clean console output
 
@@ -37,17 +33,8 @@ docker run --rm -v "$PWD:/data" latex-resume my_report.tex
 
 ## 📦 What's Inside
 
-- latexmk
-- biber
-
-TeX Live packages for:
-
-- pdflatex
-- Bibliographies
-- Fonts
-- Math
-- Graphics
-- Language support
+- [Tectonics](https://docs.rs/tectonic/latest/tectonic/)
+- Many popular packages pre-cached
 
 ## 📝 Example Files
 
