@@ -1,0 +1,7 @@
+.git
+*.aux
+*.log
+*.pdf
+README.md
+LICENSE
+sample.tex
